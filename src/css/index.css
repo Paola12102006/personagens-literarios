@@ -1,0 +1,284 @@
+body {
+    background-color: #eee;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 3px solid #eee;
+    background-color: #333333;
+}
+
+header {
+    padding: 10px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .box-menu {
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    height: 64px;
+    z-index: 1;
+}
+
+header .box-menu .menu {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 140px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+header .box-menu:hover .menu {
+    opacity: 1;
+    pointer-events: all;
+}
+
+header .box-menu .menu li {
+    background-color: #000000;
+    color: #ddd;
+    padding: 6px 5px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 15px;
+    transition: .3s ease;
+}
+
+header .box-menu .menu li:hover {
+    background-color: #202020;
+    cursor: pointer;
+}
+
+header #title {
+    font-family: "Gwendolyn", cursive;
+    font-size: 60px;
+}
+
+header #btn-tema {
+    background: none;
+}
+
+header #btn-tema .img-btn {
+    width: 50px;
+    transition: .5s ease;
+}
+
+header #btn-tema .img-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+main .lista-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0 50px;
+}
+
+main .lista-personagens .cartao-personagem {
+    width: 260px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .lista-personagens .cartao-personagem:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main .lista-personagens .cartao-personagem.acotar {
+    background-color: #d7cbdb;
+}
+
+main .lista-personagens .cartao-personagem.acotar:hover {
+    background-color: #d7b8e0;
+}
+
+main .lista-personagens .cartao-personagem.tog {
+    background-color: #cce0e6;
+}
+
+main .lista-personagens .cartao-personagem.tog:hover {
+    background-color: #bcdfeb;
+}
+
+main .lista-personagens .cartao-personagem.shatter {
+    background-color: #cce6dc;
+}
+
+main .lista-personagens .cartao-personagem.shatter:hover {
+    background-color: #a8e6cd;
+}
+
+main .lista-personagens .cartao-personagem.povo-ar {
+    background-color: #e7e2c3;
+}
+
+main .lista-personagens .cartao-personagem.povo-ar:hover {
+    background-color: #f0dc6d;
+}
+
+main .lista-personagens .cartao-personagem .box-img {
+    width: 100%;
+    position: relative;
+}
+
+main .lista-personagens .cartao-personagem .box-img .img-personagem {
+    width: 100%;
+    border-radius: 15px;
+}
+
+main .lista-personagens .cartao-personagem .box-img .nome-personagem {
+    width: 100%;
+    background: linear-gradient(#000, #00000007);
+    position: absolute;
+    top: 0;
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+main .lista-personagens .cartao-personagem .descricao {
+    max-height: 150px;
+    overflow-y: scroll;
+    font-size: 16.6px;
+    padding-right: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+main .lista-personagens .cartao-personagem .descricao p:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+main .lista-personagens .cartao-personagem .descricao::-webkit-scrollbar-thumb {
+    border: 3px solid #faf2fd;
+}
+
+main .lista-personagens .cartao-personagem .descricao::-webkit-scrollbar-track {
+    background-color: #faf2fd;
+    border-radius: 10px;
+}
+
+main .lista-personagens .cartao-personagem .descricao.acotar::-webkit-scrollbar-thumb {
+    background-color: #93709e;
+}
+
+main .lista-personagens .cartao-personagem .descricao.tog::-webkit-scrollbar-thumb {
+    background-color: #5d8b99;
+}
+
+main .lista-personagens .cartao-personagem .descricao.shatter::-webkit-scrollbar-thumb {
+    background-color: #59a789;
+}
+
+main .lista-personagens .cartao-personagem .descricao.povo-ar::-webkit-scrollbar-thumb {
+    background-color: #9e8910;
+}
+
+body.dark {
+    background-color: #111;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+    border: 3px solid #111;
+    background-color: #eee;
+}
+
+body.dark header .box-menu .menu li {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.dark header .box-menu .menu li:hover {
+    background-color: #fff;
+}
+
+body.dark header #title {
+    color: #eee;
+}
+
+body.dark main .lista-personagens .cartao-personagem {
+    color: #ddd;
+}
+
+body.dark main .lista-personagens .cartao-personagem.acotar {
+    background-color: #3f2b47;
+}
+
+body.dark main .lista-personagens .cartao-personagem.acotar:hover {
+    background-color: #2f1b36;
+}
+
+body.dark main .lista-personagens .cartao-personagem.tog {
+    background-color: #345266;
+}
+
+body.dark main .lista-personagens .cartao-personagem.tog:hover {
+    background-color: #1e3646;
+}
+
+body.dark main .lista-personagens .cartao-personagem.shatter {
+    background-color: #3a6d59;
+}
+
+body.dark main .lista-personagens .cartao-personagem.shatter:hover {
+    background-color: #204937;
+}
+
+body.dark main .lista-personagens .cartao-personagem.povo-ar {
+    background-color: #634b10;
+}
+
+body.dark main .lista-personagens .cartao-personagem.povo-ar:hover {
+    background-color: #413107;
+}
+
+body.dark main .lista-personagens .cartao-personagem .descricao::-webkit-scrollbar-thumb {
+    border: 3px solid #111;
+}
+
+body.dark main .lista-personagens .cartao-personagem .descricao::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+body.dark main .lista-personagens .cartao-personagem .descricao.acotar::-webkit-scrollbar-thumb {
+    background-color: #cfb0d8;
+}
+
+body.dark main .lista-personagens .cartao-personagem .descricao.tog::-webkit-scrollbar-thumb {
+    background-color: #a1c8d4;
+}
+
+body.dark main .lista-personagens .cartao-personagem .descricao.shatter::-webkit-scrollbar-thumb {
+    background-color: #9cd8c1;
+}
+
+body.dark main .lista-personagens .cartao-personagem .descricao.povo-ar::-webkit-scrollbar-thumb {
+    background-color: #f0db53;
+}
+
+@media (max-width: 1120px) {
+    header {
+        padding: 10px;
+    }
+
+    header #title {
+        font-size: 55px;
+    }
+}
