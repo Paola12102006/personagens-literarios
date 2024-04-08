@@ -280,5 +280,6 @@ body.dark main .lista-personagens .cartao-personagem .descricao.povo-ar::-webkit
 
     header #title {
         font-size: 55px;
+        text-align: center;
     }
 }
